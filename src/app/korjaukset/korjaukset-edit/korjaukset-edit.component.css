@@ -1,0 +1,30 @@
+form{
+    width: 800px;
+    border: solid black 1px;
+background-color: rgb(221, 221, 221);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 800px;
+    margin-left: 25%;
+    width: 800px;
+ z-index: 100;
+}
+button {
+
+margin-left: 15px;
+}
+
+
+button{
+    float: right;
+}
+
+#warning {
+   height: 7mm; 
+   width: 50%;
+}
+
+img{
+    height: 200px;
+}

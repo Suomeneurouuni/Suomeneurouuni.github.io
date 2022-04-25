@@ -1,0 +1,17 @@
+form{
+
+    border: solid black 1px;
+background-color: rgb(221, 221, 221);
+    position: absolute;
+   
+    left: 0;
+    
+    margin-left: 25%;
+    width: 900px;
+ z-index: 2;
+}
+
+
+button{
+    float: right;
+}

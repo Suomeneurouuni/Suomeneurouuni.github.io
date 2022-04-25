@@ -1,0 +1,35 @@
+<div style="height: 0vh;">
+    <mat-toolbar >
+      <mat-toolbar-row>
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span class="menu-spacer"></span>
+        <div fxShow="true" fxHide.lt-md>
+          <a  (click)="goDown1()" mat-button>Galleria</a>
+          <a (click)="goDown2()" mat-button>Palvelut</a>
+          <a  (click)="goDown4()" mat-button>Verkkokauppa</a>
+          <a  (click)="goDown3()" mat-button>Yhteystiedot</a>
+          <a  (click)="onLogout()" id="admin" *ngIf="isAuthenticated" mat-button>Kirjaudu ulos</a>
+
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  
+    <mat-sidenav-container fxFlexFill>
+      <mat-sidenav #sidenav>
+        <mat-nav-list>
+            <a (click)="sidenav.toggle()" href="" mat-list-item></a>
+          <a  (click)="goDown1()" mat-list-item>Galleria</a>
+          <a (click)="goDown2()" mat-list-item>Palvelut</a>
+          <a (click)="goDown4()"  mat-list-item>Verkkokauppa</a>
+          <a (click)="goDown3()" mat-list-item>Yhteystiedot</a>
+          <a (click)="onLogout()" id="admin" *ngIf="isAuthenticated" mat-button>Kirjaudu ulos</a>
+
+
+        </mat-nav-list>
+      </mat-sidenav>
+     
+    </mat-sidenav-container>
+  </div>
+  

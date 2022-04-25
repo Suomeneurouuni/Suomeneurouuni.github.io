@@ -1,0 +1,37 @@
+
+
+ <div id="comp-render" *ngIf="display">
+  <div class="row"> 
+    <div class="col-xs-12"> 
+  <form [formGroup]="textForm" (ngSubmit)="onSubmit()"> 
+        <div class="row"> 
+          <div class="col-xs-12"> 
+  
+
+    <button type="button" id="cancel" (click)="onCancel()" class="btn btn-danger" >Cancel</button>
+  
+   
+  
+          </div> 
+        </div>
+        <div class="row"> 
+       <div class="col-xs-12"> 
+      <div class="form-group"> 
+           <label for="name">teksti</label> 
+        
+              <textarea id="text" name="text" rows="7" cols="50" 
+              formControlName="text" class="form-control"></textarea>
+            </div> 
+          </div> 
+        </div>
+
+
+        <button type="submit"  class="btn btn-success" >Save</button> 
+  
+      
+   </form> 
+  
+      </div>
+    </div>
+  </div>
+ 

@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+  <div class="alert alert-danger" *ngIf="error">
+    <p>{{error}}</p>
+  </div>
+
+  <h3>Login</h3>
+ 
+  
+  <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" >
+  
+  
+      <div class="form-group">
+        <label for="email" class="col-lg-2 control-label">Email</label>
+        <div class="col-lg-10">
+          <input type="email" class="form-control" id="email" ngModel name="email" required email />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password" class="col-lg-2 control-label">Password</label>
+        <div class="col-lg-10">
+          <input type="password" class="form-control" id="inputPassword" ngModel name="password" required minlength="6">
+  
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <div class="col-lg-10 col-lg-offset-2">
+  
+         <button class="btn btn-primary" type="submit" [disabled]= "!authForm.valid">Login </button> 
+  
+    
+  
+  
+        </div>
+  
+      </div>
+  
+  
+  </form>
+  </div>
+  
+  
+  
+  <div class="col">
+  
+  </div>
+  </div>

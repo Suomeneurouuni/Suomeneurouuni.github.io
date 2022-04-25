@@ -1,0 +1,96 @@
+
+
+ <router-outlet *ngIf="this.router.url === '/text/1'"></router-outlet>
+ 
+ <div id="targetGalleria"> </div>
+<div class="container">
+    <div class="row justify-content-center" id="targetgalleria" style="background-image: url(assets/img/galleria.jpg); 
+               background-position:bottom;
+                background-size: cover; text-shadow: 1px 1px 2px black;">
+        <div class="col-md-auto ">
+            <h2>Tulisijat</h2>
+            <p>Yksilölliset mittatilaustulisijat</p>
+            <p>Varaavat tulisijat</p>
+            <p>Pönttöuunit</p>
+            <a (click)="onPress()" class="btn btn-lg btn-dark ">Galleria</a>
+        </div>
+    </div>
+
+    <router-outlet *ngIf="this.router.url === '/text/0'"></router-outlet>
+
+    <div id="comp-render" *ngIf="display">
+        <app-gallery></app-gallery>
+    </div>
+
+  
+
+ 
+    <div id="targetPalvelut"> </div>
+
+    <div class="row justify-content-center" id="targetpalvelut" style="background-image: url(assets/img/tulisijakorjaus.jpg); background-position:center;
+background-size: cover; text-shadow: 1px 1px 2px black;">
+        <div class="col-md-auto ">
+            <h2>Korjaukset</h2>
+            <p>Tulisijakorjaukset</p>
+            <p>Hormikorjaukset</p>
+            <a (click)="onPress1()" class="btn btn-lg btn-dark ">Korjaukset</a>
+        </div>
+    </div>
+
+    <router-outlet *ngIf="this.router.url === '/text/2'"></router-outlet>
+
+    <div id="comp-render" *ngIf="display1">
+        <app-korjaukset></app-korjaukset>
+
+    </div>
+    
+
+    <div class="row justify-content-center" style="background-image: url(assets/img/remontti.jpg); background-position: 70% 70%;
+background-size: cover; text-shadow: 1px 1px 2px black;">
+        <div class="col-md-auto ">
+            <h2>Remontit</h2>
+            <p>Mökki– ja huoneistoremontit</p>
+            <p>Sauna- ja kylpyhuoneremontit</p>
+            <p>Kattoremontit</p>
+            <a (click)="onPress2()" class="btn btn-lg btn-dark ">Remontit</a>
+        </div>
+    </div>
+
+
+    <div id="comp-render" *ngIf="display2">
+        <app-remontit></app-remontit>
+        
+    <router-outlet *ngIf="this.router.url === '/text/3'"></router-outlet>
+    </div>
+
+
+    <div class="row justify-content-center" style="background-image: url(assets/img/muut-palvelut.jpg); background-position: 0% 40%;
+background-size: cover; text-shadow: 1px 1px 2px black;">
+        <div class="col-md-auto ">
+            <h2>Muut Palvelut</h2>
+            <p>Piipunpellitykset</p>
+            <p>Sadehatut</p>
+            <p>Kattoturvatuotteet</p>
+            <a (click)="onPress3()" class="btn btn-lg btn-dark ">Muut Palvelut</a>
+        </div>
+    </div>
+
+    
+    <router-outlet *ngIf="this.router.url === '/text/4'"></router-outlet>
+
+    <div id="comp-render" *ngIf="display3">
+        <app-muutpalvelut></app-muutpalvelut>
+    </div>
+
+    <div id="targetVerkkokauppa"> </div>
+    <div class="row justify-content-center" style="background-color:#3C424C; text-shadow: 1px 1px 2px black;">
+        <div class="col-md-auto ">
+            <h2>Verkkokauppa</h2>
+            <p>Kaminat</p>
+            <p>Valmistulisijat</p>
+            <p>Hormistot</p>
+            <a href="https://www.eurotulisijat.fi/fi" target="_blank" class="btn btn-lg btn-dark ">Verkkokauppaan</a>
+        </div>
+    </div>
+
+</div>

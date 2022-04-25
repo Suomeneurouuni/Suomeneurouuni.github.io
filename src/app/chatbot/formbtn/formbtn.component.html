@@ -1,0 +1,22 @@
+<button [disabled]="clicked3 || clicked2 == true" type="button" class="btn btn-sm btn-outline-dark" *ngIf="showButton"
+    (click)="addForm1()" style="margin: 1px;">
+    <fa-icon *ngIf="clicked1 === true" [icon]="faTimes"></fa-icon>
+    <fa-icon *ngIf="clicked1 === false" [icon]="faHammer"></fa-icon>
+    Remontit
+</button><br>
+
+<button [disabled]="clicked3 || clicked1 == true" type="button" class="btn btn-sm btn-outline-dark" *ngIf="showButton"
+    (click)="addForm2()" style="margin: 1px;">
+    <fa-icon *ngIf="clicked2 === true" [icon]="faTimes"></fa-icon>
+    <fa-icon *ngIf="clicked2 === false" [icon]="faFire"></fa-icon>
+    Tulisija/tulisijakorjaus
+</button><br>
+
+<button [disabled]="clicked1 || clicked2 == true" type="button" class="btn btn-sm btn-outline-dark" *ngIf="showButton"
+    (click)="addForm3()" style="margin: 1px;">
+    <fa-icon *ngIf="clicked3 === true" [icon]="faTimes"></fa-icon>
+    <fa-icon *ngIf="clicked3 === false" [icon]="faQuestion"></fa-icon>
+    Muu tiedustelu
+</button>
+
+<app-forms [showForm1]="showForm1" [showForm2]="showForm2" [showForm3]="showForm3"></app-forms>

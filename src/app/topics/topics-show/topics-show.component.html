@@ -1,0 +1,20 @@
+
+ <button class="btn btn-info" 
+            id="editText" *ngIf="isAuthenticated" routerLink="/text/1"> Muokkaa tekstiä</button>
+
+
+
+
+ <div id="comp-render" *ngIf="display">
+<div class="container" >
+    
+    <div class="card">
+        <div class="card-body">
+       
+            <h5 class="card-title">Ajankohtaista</h5>
+            <h3>{{ teksti.text }}</h3> 
+  
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,43 @@
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  width: 100%;
+  font-size: 25px;
+  font-size: 15px;
+  position: fixed;
+  z-index: 1000;
+  background-color: var(--navbar-scroll);
+  transition: background-color 1s ease;
+  color: white;
+  -webkit-box-shadow: var(--navbar-scroll-shadow);
+  box-shadow: var(--navbar-scroll-shadow);
+
+
+}
+
+mat-sidenav {
+  position: fixed;
+  background-color: #FC842B;
+  transition: background-color 1s ease;
+  color: var(--navbar-scroll-text);
+  height: 250px;
+
+}
+
+.menu-spacer {
+  flex: 1 1 auto;
+
+}
+
+
+.mat-button {
+  font-size: 20px;
+}
+
+.mat-button:hover {
+  font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+}

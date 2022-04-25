@@ -1,0 +1,18 @@
+h5 {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card {
+    padding: 10px;
+    font-size: 18px;
+    -moz-box-shadow: 7px 7px 56px -24px rgba(0, 0, 0, 0.57);
+    box-shadow: 7px 7px 56px -24px rgb(0 0 0 / 57%);
+}
+
+#editText {
+  color: white;
+    margin-left: 16%;
+    background-color: rgb(0, 136, 170);
+}

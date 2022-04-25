@@ -1,0 +1,26 @@
+.row{
+    -moz-box-shadow: 7px 7px 56px -24px rgba(0,0,0,0.57);
+    box-shadow: 7px 7px 56px -24px rgb(0 0 0 / 57%);
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: larger;
+    padding-top: 2rem;
+    position: relative;
+    height: 15rem;
+    text-align:center;
+    align-items: center;
+}
+#targetGalleria{
+    width: 60px;
+    height: 60px;
+}
+
+#targetPalvelut{
+    width: 60px;
+    height: 60px;
+}
+
+#targetVerkkokauppa{
+    width: 60px;
+    height: 60px;
+}

@@ -1,0 +1,16 @@
+
+<div id="itemswrapper" >
+
+  <div class="container">
+
+    <button class="btn btn-secondary" *ngIf="isAuthenticated" 
+    [routerLink]="[index]" routerLinkActive="active">muokkaa remonttia</button>
+
+
+      <div class="img-col">
+        <img [src]="remontti.imagePath" style="height: 400px; ">
+      </div>
+      <div class="text col">
+          <h3>{{ remontti.teksti}}</h3>
+      </div>
+  </div>

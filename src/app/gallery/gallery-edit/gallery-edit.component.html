@@ -1,0 +1,108 @@
+<div class="row"> 
+    <div class="col-xs-12"> 
+  <form [formGroup]="itemForm" (ngSubmit)="onSubmit()"> 
+        <div class="row"> 
+          <div class="col-xs-12"> 
+  
+    <button type="button" id="cancel" (click)="onCancel()" class="btn btn-danger" >Cancel</button>
+  
+    <button type="submit" class="btn btn-success" >Save</button> 
+  
+  
+          </div> 
+        </div>
+        <div class="row"> 
+       <div class="col-xs-12"> 
+      <div class="form-group"> 
+           <label for="name">Nimi</label> 
+              <input type="text" id="name" formControlName="name" class="form-control"> 
+            </div> 
+          </div> 
+        </div>
+
+        
+    <div style="padding: 5mm">
+
+      <input type="file" name="file" (input)="onFileChanged($event)" accept=".jpeg,.jpg,.png,.svg" />
+    
+      <div>
+      {{ downloadableURL }}
+    </div>
+ 
+    </div>
+
+    <div class="row"> 
+      <div class="col-xs-12"> 
+     <div class="form-group"> 
+          <label for="imagePath">imagePath</label> 
+             <input type="text" id="imagePath" #imagePath  formControlName="imagePath" class="form-control"> 
+      
+           </div> 
+         </div> 
+       </div>
+
+
+    
+  
+
+   <div class="row">
+    <div class="col-xs-12" formArrayName="tuotteet">
+   <div class="row"
+     *ngFor="let tuoteCtrl of itemForm.get('tuotteet')['controls']; let i = index"
+     [formGroupName]="i" style="margin-top: 10px;">
+
+     <div id="tuotediv"></div>
+
+    <div class="col-xs-8">
+      <label for="name">Nimi</label> 
+      <input type="text" class="form-control" id="tuotenimi" formControlName="name">
+    </div>
+
+
+
+    <div style="padding: 5mm">
+
+      <input type="file" name="file" (input)="onFileChanged($event)" accept=".jpeg,.jpg,.png,.svg" />
+      
+    <div>
+      {{ downloadableURL }}
+    </div>
+
+    </div>
+
+    <div class="row"> 
+      <div class="col-xs-12"> 
+     <div class="form-group"> 
+          <label for="imagePath">imagePath</label> 
+             <input type="text" id="imagePath" formControlName="imagePath" class="form-control"> 
+          
+           </div> 
+         </div> 
+       </div>
+
+
+ <div class="col-xs-2">
+    <button type="button" class="btn btn-danger" (click)="onDeleteTuote(i)">Poista</button>
+  </div>
+     </div>
+
+            
+  <div class="row">
+  <div class="col-xs-12">
+      <button type="button" class="btn btn-success" (click)="onAddTuote()">Lisää tuote</button>
+     </div>
+
+   </div>
+   </div>
+   </div>
+  
+   
+   </form> 
+  
+      </div>
+    </div>
+  
+   
+
+  
+   

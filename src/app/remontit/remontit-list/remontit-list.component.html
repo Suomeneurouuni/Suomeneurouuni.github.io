@@ -1,0 +1,23 @@
+
+
+<app-remontit-text
+*ngFor="let tekstiEl of tekstit.slice(3, 4); let i = index"  
+[teksti]="tekstiEl"  
+[index]="i"> 
+</app-remontit-text>  
+
+
+<div id="kontainer" *ngIf="isAuthenticated"> 
+<div class="row">  
+   <div class="col-xs-12">  
+    <button class="btn btn-success" id="uus" (click)="onNewRemontti()">Uusi remontti</button>  
+  </div>  
+</div>  
+</div> 
+
+
+   <app-remontit-item  
+    *ngFor="let remonttiEl of remontit; let i = index"  
+    [remontti]="remonttiEl"  
+    [index]="i"> 
+   </app-remontit-item>  

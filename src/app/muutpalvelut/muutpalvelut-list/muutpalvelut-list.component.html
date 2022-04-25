@@ -1,0 +1,23 @@
+
+
+<app-muutpalvelut-text
+*ngFor="let tekstiEl of tekstit.slice(4, 5); let i = index"  
+[teksti]="tekstiEl"  
+[index]="i"> 
+</app-muutpalvelut-text>  
+
+
+<div id="kontainer" *ngIf="isAuthenticated"> 
+<div class="row">  
+   <div class="col-xs-12">  
+    <button class="btn btn-success" id="uus" (click)="onNewPalvelu()">Uusi palvelu</button>  
+  </div>  
+</div>  
+</div> 
+
+
+   <app-muutpalvelut-item  
+    *ngFor="let palveluEl of palvelut; let i = index"  
+    [palvelu]="palveluEl"  
+    [index]="i"> 
+   </app-muutpalvelut-item>  

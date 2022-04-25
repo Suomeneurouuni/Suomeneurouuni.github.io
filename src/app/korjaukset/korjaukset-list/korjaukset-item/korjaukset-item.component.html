@@ -1,0 +1,14 @@
+
+<div id="itemswrapper" >
+
+ <button class="btn btn-secondary" *ngIf="isAuthenticated" 
+          [routerLink]="[index]" routerLinkActive="active">muokkaa korjausta</button>
+
+  <div class="container">
+      <div class="img-col">
+        <img [src]="korjaus.imagePath" style="height: 400px;">
+      </div>
+      <div class="text col">
+          <h3>{{ korjaus.teksti}}</h3>
+      </div>
+  </div>

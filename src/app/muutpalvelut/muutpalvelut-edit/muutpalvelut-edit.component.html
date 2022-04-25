@@ -1,0 +1,55 @@
+
+<div class="row"> 
+    <div class="col-xs-12"> 
+  <form [formGroup]="palveluForm" (ngSubmit)="onSubmit()"> 
+        <div class="row"> 
+          <div class="col-xs-12"> 
+  
+    <button type="button" id="cancel" (click)="onCancel()" class="btn btn-danger" >Cancel</button>
+  
+    <button type="submit" class="btn btn-success" >Save</button> 
+  
+  
+          </div> 
+        </div>
+        <div class="row"> 
+       <div class="col-xs-12"> 
+      <div class="form-group"> 
+           <label for="name">Teksti</label> 
+              <input type="text" id="name" formControlName="teksti" class="form-control"> 
+            </div> 
+          </div> 
+        </div>
+
+        
+    <div style="padding: 20mm">
+
+      <input type="file" name="file" (input)="onFileChanged($event)" accept=".jpeg,.jpg,.png,.svg" />
+      <br />
+     
+      
+      {{ downloadableURL }}
+
+    </div>
+
+    <div class="row"> 
+      <div class="col-xs-12"> 
+     <div class="form-group"> 
+          <label for="imagePath">imagePath</label> 
+             <input type="text" id="imagePath" #imagePath formControlName="imagePath" class="form-control"> 
+        <div class="row">
+        <div class="col-xs-12">
+          <img [src]="imagePath.value" class="img-responsive">
+        </div>
+      </div>
+           </div> 
+         </div> 
+       </div>
+
+
+   </form> 
+  
+      </div>
+    </div>
+  
+   

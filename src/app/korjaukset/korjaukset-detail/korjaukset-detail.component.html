@@ -1,0 +1,33 @@
+
+<div id="border" *ngIf="isAuthenticated" >
+
+    <button type="button"  (click)="onCancel()" class="btn btn-danger" >Cancel</button>
+    <div class="row">
+       
+      <div class="col-xs-12">
+        
+        <img [src]="korjaus.imagePath" alt="{{ korjaus.teksti }}" class="img-responsive"
+              style="max-height: 300px;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>{{ korjaus.teksti }}</h1>
+      </div>
+    </div>
+    
+  <hr>
+  
+    <div class="row">
+      <div class="col-xs-12">
+            <a style="cursor: pointer;" id="edit" (click)="onEditKorjaus()">Muokkaa </a>
+            
+            <a style="cursor: pointer;" id="delete" (click)="onDeleteKorjaus()">Poista Korjaus</a>
+  
+        </div>
+      </div>
+    </div>
+  
+
+    
+  

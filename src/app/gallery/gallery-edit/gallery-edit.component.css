@@ -1,0 +1,57 @@
+form {
+    width: 800px;
+    height: 450px;
+    border: solid black 3px;
+    border-radius: 10px;
+    border: solid black 2px;
+    background-color: rgb(221, 221, 221);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 15%;
+    margin-left: 25%;
+    z-index: 2;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+button {
+
+    margin-left: 15px;
+}
+
+
+button {
+    float: right;
+}
+
+#warning {
+    height: 7mm;
+    width: 50%;
+}
+
+img {
+    height: 200px;
+}
+
+#tuotediv {
+    background-color: black;
+    height: 1px;
+    box-shadow: 0px 2px 3px rgb(0, 0, 0);
+
+}
+
+.row {
+    --bs-gutter-x: 0 !important;
+
+}
+
+label {
+    margin-top: 3px;
+}
+
+#tuotenimi {
+    width: 300px;
+}

@@ -1,0 +1,38 @@
+<div class="alert alert-dismissible alert-danger d-none" id="msg-box" style="position: fixed;">
+    <button (click)="close()" type="button" class="close" data-dismiss="alert">&times;</button>
+    <p class="mb-0"></p>
+</div>
+
+<input type="checkbox" id="check" (click)="checkChange()"> <label class="chat-btn" for="check" style="position: fixed;">
+    <fa-icon *ngIf="checked === true" [icon]="faTimes"></fa-icon>
+    <fa-icon *ngIf="checked === false" [icon]="faComment"></fa-icon>
+</label>
+
+<div id="wrapper0" class="wrapper0 hide" style="position: fixed; ">
+    <div class="chat-form" *ngFor="let popMessage of popMessages">
+        <div class="message pop-message">
+            <b>{{ popMessage.user }}</b> <br>
+            <span>{{ popMessage.msg }}</span>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper1" style="position: fixed; ">
+    <div class="header">
+        <h2>Suomen Eurouuni</h2>
+    </div>
+    <div class="chat">
+        <div class="chat-form" *ngFor="let message of messages">
+            <div class="message bot-message">
+                <b>{{ message.user }}</b> <br>
+                <span>{{ message.msg }}</span>
+            </div>
+        </div>
+        <div class="chat-form" style="padding-bottom: 0;">
+            <app-formbtn [showButton]="showBtn"></app-formbtn>
+        </div>
+    </div>
+    <div class="footer"></div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>

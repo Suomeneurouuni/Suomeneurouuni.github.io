@@ -1,0 +1,23 @@
+
+
+<app-korjaukset-text
+    *ngFor="let tekstiEl of tekstit.slice(2, 3); let i = index"  
+    [teksti]="tekstiEl"  
+    [index]="i"> 
+</app-korjaukset-text>  
+
+
+<div id="kontainer" *ngIf="isAuthenticated"> 
+    <div class="row">  
+       <div class="col-xs-12">  
+        <button class="btn btn-success" id="uus" (click)="onNewKorjaus()">Uusi korjaus</button>  
+      </div>  
+    </div>  
+   </div> 
+  
+    
+       <app-korjaukset-item  
+        *ngFor="let korjausEl of korjaukset; let i = index"  
+        [korjaus]="korjausEl"  
+        [index]="i"> 
+       </app-korjaukset-item>  

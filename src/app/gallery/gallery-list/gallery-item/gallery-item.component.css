@@ -1,0 +1,18 @@
+#itemswrapper{
+    width: 259px;
+    display: inline-block;
+    padding: 30px;
+   text-align: center;
+
+}
+
+h4{
+    font-size: 19px;
+    color: black;
+ 
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}

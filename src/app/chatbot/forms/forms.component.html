@@ -1,0 +1,89 @@
+<div *ngIf="showForm1" class="form">
+    <h2 id="formSubject" style="text-align: center;">Remontit</h2>
+    <p style="text-align: center;">Yhteydenottolomake</p>
+    <form>
+        <div class="form-group">
+            <label for="name">Nimi</label>
+            <input [formControl]="nameFormControl" type="input" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Sähköposti</label>
+            <input [formControl]="emailFormControl" type="email" class="form-control" id="email">
+            <b *ngIf="emailFormControl.hasError('required') && emailFormControl.touched"><small
+                    class="text-danger">Sähköposti
+                    tarvitaan </small>
+                <fa-icon [icon]="faExclamationTriangle" style="color: red;"></fa-icon>
+            </b>
+            <b *ngIf="emailFormControl.hasError('email')"><small class="text-danger">Viallinen Sähköposti </small>
+                <fa-icon [icon]="faExclamationTriangle" style="color: red;"></fa-icon>
+            </b>
+        </div>
+        <div class="form-group">
+            <label for="textarea">Tietoja</label>
+            <textarea [formControl]="messageFormControl" class="form-control" id="textarea" rows="3"></textarea>
+        </div><br>
+        <button [disabled]="emailFormControl.invalid || nameFormControl.invalid || loading" type="button"
+            class="btn btn-dark w-100" (click)="sendMail()">Lähetä
+            Viesti</button>
+    </form>
+</div>
+
+<div *ngIf="showForm2" class="form">
+    <h2 id="formSubject" style="text-align: center;">Tulisija/ Tulisijakorjaus</h2>
+    <p style="text-align: center;">Yhteydenottolomake</p>
+    <form>
+        <div class="form-group">
+            <label for="name">Nimi</label>
+            <input [formControl]="nameFormControl" type="input" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Sähköposti</label>
+            <input [formControl]="emailFormControl" type="email" class="form-control" id="email">
+            <b *ngIf="emailFormControl.hasError('required') && emailFormControl.touched"><small
+                    class="text-danger">Sähköposti
+                    tarvitaan </small>
+                <fa-icon [icon]="faExclamationTriangle" style="color: red;"></fa-icon>
+            </b>
+            <b *ngIf="emailFormControl.hasError('email')"><small class="text-danger">Viallinen Sähköposti </small>
+                <fa-icon [icon]="faExclamationTriangle" style="color: red;"></fa-icon>
+            </b>
+        </div>
+        <div class="form-group">
+            <label for="textarea">Tietoja</label>
+            <textarea [formControl]="messageFormControl" class="form-control" id="textarea" rows="3"></textarea>
+        </div><br>
+        <button [disabled]="emailFormControl.invalid || nameFormControl.invalid || loading" type="button"
+            class="btn btn-dark w-100" (click)="sendMail()">Lähetä
+            Viesti</button>
+    </form>
+</div>
+
+<div *ngIf="showForm3" class="form">
+    <h2 id="formSubject" style="text-align: center;">Muu tiedustelu</h2>
+    <p style="text-align: center;">Yhteydenottolomake</p>
+    <form>
+        <div class="form-group">
+            <label for="name">Nimi</label>
+            <input [formControl]="nameFormControl" type="input" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Sähköposti</label>
+            <input [formControl]="emailFormControl" type="email" class="form-control" id="email">
+            <b *ngIf="emailFormControl.hasError('required') && emailFormControl.touched"><small
+                    class="text-danger">Sähköposti
+                    tarvitaan </small>
+                <fa-icon [icon]="faExclamationTriangle" style="color: red;"></fa-icon>
+            </b>
+            <b *ngIf="emailFormControl.hasError('email')"><small class="text-danger">Viallinen Sähköposti </small>
+                <fa-icon [icon]="faExclamationTriangle" style="color: red;"></fa-icon>
+            </b>
+        </div>
+        <div class="form-group">
+            <label for="textarea">Tietoja</label>
+            <textarea [formControl]="messageFormControl" class="form-control" id="textarea" rows="3"></textarea>
+        </div><br>
+        <button [disabled]="emailFormControl.invalid || nameFormControl.invalid || loading" type="button"
+            class="btn btn-dark w-100" (click)="sendMail()">Lähetä
+            Viesti</button>
+    </form>
+</div>

@@ -1,0 +1,153 @@
+#msg-box {
+    display: block;
+    right: 60px;
+    bottom: 530px;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    white-space: pre-wrap;
+}
+
+.bot-message {
+    background-color: #fff;
+    margin-right: 100px;
+}
+
+.pop-message {
+    background-color: #fff;
+
+}
+
+.chat-btn {
+    position: absolute;
+    right: 14px;
+    bottom: 30px;
+    cursor: pointer
+}
+
+.chat-btn .close {
+    display: none
+}
+
+.chat-btn i {
+    transition: all 0.9s ease
+}
+
+#check:checked~.chat-btn i {
+    display: block;
+    pointer-events: auto;
+    transform: rotate(180deg)
+}
+
+#check:checked~.chat-btn .comment {
+    display: none
+}
+
+.chat-btn i {
+    font-size: 22px;
+    color: #fff !important
+}
+
+.chat-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #fe852b;
+    color: #fff;
+    font-size: 22px;
+    border: none
+}
+
+.chat {
+    background-color: #ebeef5;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 380px;
+}
+
+.wrapper0 {
+    right: 55px;
+    bottom: 55px;
+    width: 230px;
+    display: block;
+    transition: all 1s;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+#check:checked~.wrapper0 {
+    display: none;
+}
+
+.wrapper1 {
+    -moz-box-shadow: 7px 7px 56px -24px rgba(0, 0, 0, 0.57);
+    box-shadow: 7px 7px 56px -24px rgb(0 0 0 / 57%);
+    right: 70px;
+    bottom: 55px;
+    width: 350px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+#check:checked~.wrapper1 {
+    display: block;
+}
+
+.header {
+    padding: 10px;
+    background-color: #fe852b;
+    border-radius: 5px 5px 0px 0px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer {
+    padding: 15px;
+    background-color: #fe852b;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.chat-form {
+    padding: 15px;
+}
+
+.chat-form input,
+textarea,
+button {
+    margin-bottom: 10px
+}
+
+.chat-form textarea {
+    resize: none
+}
+
+.form-control:focus,
+.btn:focus {
+    box-shadow: none
+}
+
+.btn,
+.btn:focus,
+.btn:hover {
+    background-color: #fe852b;
+    border: #fe852b;
+}
+
+#check {
+    display: none !important
+}

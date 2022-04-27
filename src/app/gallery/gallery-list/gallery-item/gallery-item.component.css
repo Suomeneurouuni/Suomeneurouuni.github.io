@@ -18,9 +18,10 @@ a{
 }
 
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 760px) {
     #itemswrapper {
      width: 50%;
-   
+     height: 50%;
      }  
     }

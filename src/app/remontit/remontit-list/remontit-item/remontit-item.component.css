@@ -35,3 +35,20 @@ button{
     float: left;
     margin-bottom: 10px;
 }
+
+
+
+@media screen and (max-width: 780px) {
+    img {
+     width: 200px;
+     height: 250px !important; 
+     }  
+
+    h3 {
+         font-size: 15px;
+     }
+    }
+
+    img {
+     height: 400px
+    }

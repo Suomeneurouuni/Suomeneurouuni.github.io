@@ -1,8 +1,10 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { ContentComponent } from './content/content.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -26,19 +28,19 @@ import { ChatbotComponent } from './chatbot/chatbot.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormbtnComponent } from './chatbot/formbtn/formbtn.component';
 import { FormsComponent } from './chatbot/forms/forms.component';
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { AngularFireStorageModule } from '@angular/fire/compat/storage';
-import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';                     
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';   
+import { AngularFirestore } from '@angular/fire/compat/firestore';         
+import { AngularFireStorageModule } from '@angular/fire/compat/storage'; 
+import { environment } from 'src/environments/environment';   
 import { GalleryDetailComponent } from './gallery/gallery-detail/gallery-detail.component';
 import { GalleryCategoryComponent } from './gallery/gallery-category/gallery-category.component';
 import { GalleryService } from './gallery/gallery.service';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { GalleryListComponent } from './gallery/gallery-list/gallery-list.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { GalleryEditComponent } from './gallery/gallery-edit/gallery-edit.component';
+import { GalleryComponent } from './gallery/gallery.component';  
+import { GalleryEditComponent } from './gallery/gallery-edit/gallery-edit.component';  
 import { GalleryStartComponent } from './gallery/gallery-start/gallery-start.component';
 import { GalleryItemComponent } from './gallery/gallery-list/gallery-item/gallery-item.component';
 import { GalleryTextComponent } from './gallery/gallery-text/gallery-text.component';
@@ -66,12 +68,17 @@ import { RemontitListComponent } from './remontit/remontit-list/remontit-list.co
 import { RemontitTextComponent } from './remontit/remontit-text/remontit-text.component';
 import { RemontitItemComponent } from './remontit/remontit-list/remontit-item/remontit-item.component';
 
+const routes: Routes = [
+
+];
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NavbarComponent,
     GalleryDivComponent,
+    ContentComponent,
     FooterComponent,
     AuthComponent,
     HomepageComponent,
@@ -79,38 +86,38 @@ import { RemontitItemComponent } from './remontit/remontit-list/remontit-item/re
     ChatbotComponent,
     FormbtnComponent,
     FormsComponent,
-    GalleryDetailComponent,
-    GalleryCategoryComponent,
-    GalleryStartComponent,
-    HomepageComponent,
-    GalleryCategoryComponent,
-    GalleryListComponent,
-    GalleryComponent,
-    GalleryEditComponent,
-    GalleryItemComponent,
-    GalleryTextComponent,
-    GalleryTextShowComponent,
-    TopicsShowComponent,
-    KorjauksetComponent,
-    RemontitComponent,
-    GalleryCategoryBackComponent,
-    MuutpalvelutComponent,
-    KorjauksetDetailComponent,
-    KorjauksetEditComponent,
-    KorjauksetItemComponent,
-    KorjauksetListComponent,
-    KorjauksetTextComponent,
-    MuutpalvelutDetailComponent,
-    MuutpalvelutEditComponent,
-    MuutpalvelutListComponent,
-    MuutpalvelutTextComponent,
-    MuutpalvelutItemComponent,
-    RemontitDetailComponent,
-    RemontitEditComponent,
-    RemontitListComponent,
-    RemontitTextComponent,
-    RemontitItemComponent,
-
+     GalleryDetailComponent,
+ GalleryCategoryComponent,
+  GalleryStartComponent,
+  HomepageComponent,
+  GalleryCategoryComponent,
+  GalleryListComponent,
+   GalleryComponent,
+   GalleryEditComponent,
+   GalleryItemComponent,
+   GalleryTextComponent,
+   GalleryTextShowComponent,
+   TopicsShowComponent,
+   KorjauksetComponent,
+   RemontitComponent,
+  GalleryCategoryBackComponent,
+   MuutpalvelutComponent,
+   KorjauksetDetailComponent,
+   KorjauksetEditComponent,
+   KorjauksetItemComponent,
+   KorjauksetListComponent,
+   KorjauksetTextComponent,
+   MuutpalvelutDetailComponent,
+   MuutpalvelutEditComponent,
+   MuutpalvelutListComponent,
+   MuutpalvelutTextComponent,
+   MuutpalvelutItemComponent,
+   RemontitDetailComponent,
+   RemontitEditComponent,
+   RemontitListComponent,
+   RemontitTextComponent,
+   RemontitItemComponent,
+  
 
 
   ],
@@ -132,19 +139,28 @@ import { RemontitItemComponent } from './remontit/remontit-list/remontit-item/re
     MatSidenavModule,
     MatListModule,
     FontAwesomeModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule,
-    AngularFireStorageModule,
-    MatToolbarModule,
-    AppRoutingModule,
-    CommonModule,
-    ReactiveFormsModule,
-    RouterModule,
-    CommonModule,
-    BrowserModule,
+     AngularFireModule.initializeApp(environment.firebaseConfig),
+     AngularFireDatabaseModule,             
+     AngularFireStorageModule,
+     MatToolbarModule,
+     AppRoutingModule,
+  CommonModule,
+     ReactiveFormsModule,
+     RouterModule.forRoot( routes, { useHash: true }),
+     CommonModule,
+     BrowserModule,  
+   
+ 
+   
+ 
+
+     
+
+
   ],
   providers: [ScrollDispatcher, TekstiService, GalleryService, AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
 

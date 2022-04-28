@@ -57,7 +57,7 @@ export class ChatbotComponent implements OnInit {
   messages = [
     {
       user: 'Yhteydenottobotti🤖',
-      msg: '👋Hei olen Suomen Eurouuni yhteydenottobotti!'
+      msg: '👋Hei olen Suomen Eurouuni yhteydenottobotti'
     },
     {
       user: 'Yhteydenottobotti🤖',

@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { ContentComponent } from './content/content.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -78,7 +78,7 @@ const routes: Routes = [
     HeaderComponent,
     NavbarComponent,
     GalleryDivComponent,
-    ContentComponent,
+
     FooterComponent,
     AuthComponent,
     HomepageComponent,

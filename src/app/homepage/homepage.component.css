@@ -1,12 +1,3 @@
 body {
     overflow-x: hidden;
 }
-
-a {
-    color: #ff6424 !important;
- position: absolute;
- top: 8px;
- margin-top: 290px;
-cursor: default;
- 
-}

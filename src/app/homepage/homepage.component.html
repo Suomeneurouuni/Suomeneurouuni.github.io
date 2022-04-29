@@ -1,16 +1,7 @@
 
 <app-navbar></app-navbar>
 <app-header></app-header>
-<h1> kissa </h1>
 <router-outlet *ngIf="this.router.url === '/auth'"></router-outlet>
-<div id ="login" *ngIf="!isAuthenticated">
-<a (click)="onPress()">Login</a>
-
-<div id="comp-render" *ngIf="display" >
-    <app-auth></app-auth>
-</div>
-</div>
-
 <app-topics></app-topics>
 <app-gallery-div></app-gallery-div>
 <app-footer></app-footer>

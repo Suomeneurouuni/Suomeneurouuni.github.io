@@ -3,10 +3,11 @@ body {
 }
 
 a {
-    color: #ff6424 !important;
+    opacity: 0;
  position: absolute;
  top: 8px;
  margin-top: 290px;
 cursor: default;
  
 }
+

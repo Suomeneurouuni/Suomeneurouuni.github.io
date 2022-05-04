@@ -24,6 +24,7 @@
     margin-top: 25%;
     margin-left: 25%;
     width: 800px;
+     z-index: 100;
    
     background-color: rgb(233, 233, 233);
 }

@@ -36,3 +36,12 @@ button {
   button {
       float: left;
   }
+
+  pre{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 120%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+}
+

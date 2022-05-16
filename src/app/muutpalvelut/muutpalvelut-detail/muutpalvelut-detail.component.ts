@@ -56,7 +56,7 @@ export class MuutpalvelutDetailComponent implements OnInit {
             
    onDeletePalvelu() {
        this.galleryService.deletePalvelu(this.id);
-       this.router.navigate(['/palvelut']);
+       this.router.navigate(['/muutpalvelut']);
        this.dataStorageService.storePalvelut();
 
    }

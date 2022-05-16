@@ -1,0 +1,23 @@
+h4 {
+ 
+    font-size: 25px;
+    color: black;
+}
+
+
+#editText {
+    color: white;
+      background-color: rgb(0, 136, 170);
+      margin-left: 10%;
+      margin-bottom: 20px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+  
+  pre{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    
+}

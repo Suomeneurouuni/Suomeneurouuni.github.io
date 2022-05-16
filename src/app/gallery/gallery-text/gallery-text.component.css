@@ -15,3 +15,13 @@ background-color: rgb(221, 221, 221);
 button{
     float: right;
 }
+
+
+@media screen and (max-width: 1078px) {
+    form {
+     width: 90%;
+     height: 50%;
+     margin-right: 5%;
+     margin-left: 5%;
+     }  
+    }

@@ -1,7 +1,7 @@
 .footer {
   left: 0;
   bottom: 0;
-  width: 100%;
+
   background-color: #fe852b;
   color: white;
   text-align: center;
@@ -14,6 +14,7 @@
   line-height: 30px;
   margin-top: 10%;
   color: rgb(85, 45, 13);
+
 }
 
 h1 {
@@ -29,3 +30,4 @@ p {
   width: 60px;
   height: 60px;
 }
+

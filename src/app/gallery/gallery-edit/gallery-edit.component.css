@@ -8,7 +8,7 @@ form {
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 15%;
+    margin-top: 30%;
     margin-left: 25%;
     z-index: 2;
     overflow: scroll;
@@ -55,3 +55,15 @@ label {
 #tuotenimi {
     width: 300px;
 }
+
+
+
+@media screen and (max-width: 1078px) {
+    form {
+     width: 90%;
+     height: 70%;
+     margin-right: 5%;
+     margin-left: 5%;
+     margin-top: 50%;
+     }  
+    }

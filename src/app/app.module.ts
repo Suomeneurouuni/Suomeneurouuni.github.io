@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-
+import { FooterAukioloComponent } from './footer/footer-aukiolo/footer-aukiolo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -67,6 +67,7 @@ import { RemontitEditComponent } from './remontit/remontit-edit/remontit-edit.co
 import { RemontitListComponent } from './remontit/remontit-list/remontit-list.component';
 import { RemontitTextComponent } from './remontit/remontit-text/remontit-text.component';
 import { RemontitItemComponent } from './remontit/remontit-list/remontit-item/remontit-item.component';
+import { FooterPuhComponent } from './footer/footer-puh/footer-puh.component';
 
 const routes: Routes = [
 
@@ -78,7 +79,8 @@ const routes: Routes = [
     HeaderComponent,
     NavbarComponent,
     GalleryDivComponent,
-
+  FooterAukioloComponent,
+  FooterPuhComponent,
     FooterComponent,
     AuthComponent,
     HomepageComponent,

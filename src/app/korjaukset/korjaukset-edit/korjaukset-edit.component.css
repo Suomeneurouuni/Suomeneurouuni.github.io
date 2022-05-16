@@ -28,3 +28,13 @@ button{
 img{
     height: 200px;
 }
+
+
+@media screen and (max-width: 1078px) {
+    form {
+     width: 90%;
+     height: 70%;
+     margin-right: 5%;
+     margin-left: 5%;
+     }  
+    }

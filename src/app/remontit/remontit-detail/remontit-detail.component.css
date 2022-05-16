@@ -36,3 +36,13 @@ button{
 img{
     height: 200px;
 }
+
+
+@media screen and (max-width: 1078px) {
+    #border {
+     width: 90%;
+     height: 40%;
+     margin-right: 5%;
+     margin-left: 5%;
+     }  
+    }

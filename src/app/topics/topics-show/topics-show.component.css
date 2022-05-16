@@ -16,3 +16,14 @@ h5 {
     margin-left: 16%;
     background-color: rgb(0, 136, 170);
 }
+
+pre{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 17px;
+     white-space: pre-wrap;
+     word-wrap: break-word;
+    text-align: justify;
+
+
+
+} 
